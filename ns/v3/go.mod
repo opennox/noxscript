@@ -5,9 +5,9 @@ go 1.22.0
 toolchain go1.23.3
 
 require (
-	github.com/opennox/libs v0.0.0-20241128181020-dd3509f009ee
+	github.com/opennox/libs v0.0.0-20241128182501-2dab81a0deab
 	github.com/opennox/noxscript/ns v1.0.3
-	github.com/opennox/noxscript/ns/v4 v4.21.2
+	github.com/opennox/noxscript/ns/v4 v4.21.3
 	github.com/shoenig/test v1.12.0
 )
 
