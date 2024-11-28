@@ -3,11 +3,11 @@ package ns
 import (
 	"context"
 
-	"github.com/noxworld-dev/opennox-lib/player"
+	"github.com/opennox/libs/player"
 
-	"github.com/noxworld-dev/noxscript/ns/v4/audio"
-	"github.com/noxworld-dev/noxscript/ns/v4/effect"
-	"github.com/noxworld-dev/noxscript/ns/v4/spell"
+	"github.com/opennox/noxscript/ns/v4/audio"
+	"github.com/opennox/noxscript/ns/v4/effect"
+	"github.com/opennox/noxscript/ns/v4/spell"
 )
 
 var impl Implementation

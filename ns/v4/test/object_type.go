@@ -3,11 +3,11 @@ package nstest
 import (
 	"sync/atomic"
 
-	"github.com/noxworld-dev/opennox-lib/object"
+	"github.com/opennox/libs/object"
 
-	"github.com/noxworld-dev/noxscript/ns/v4"
-	"github.com/noxworld-dev/noxscript/ns/v4/class"
-	"github.com/noxworld-dev/noxscript/ns/v4/subclass"
+	"github.com/opennox/noxscript/ns/v4"
+	"github.com/opennox/noxscript/ns/v4/class"
+	"github.com/opennox/noxscript/ns/v4/subclass"
 )
 
 type ObjectTypes struct {

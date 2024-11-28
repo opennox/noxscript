@@ -10,10 +10,10 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/noxworld-dev/opennox-lib/maps"
+	"github.com/opennox/libs/maps"
 
-	"github.com/noxworld-dev/noxscript/ns/asm"
-	"github.com/noxworld-dev/noxscript/ns/v3/noxast"
+	"github.com/opennox/noxscript/ns/asm"
+	"github.com/opennox/noxscript/ns/v3/noxast"
 )
 
 func Decomp(args []string, c *noxast.Config) error {

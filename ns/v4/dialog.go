@@ -1,6 +1,6 @@
 package ns
 
-import "github.com/noxworld-dev/noxscript/ns/v4/audio"
+import "github.com/opennox/noxscript/ns/v4/audio"
 
 // SetShopkeeperText sets localized shopkeeper text.
 func SetShopkeeperText(obj Obj, text StringID) {

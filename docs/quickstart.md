@@ -92,9 +92,9 @@ Once done, we can make a new project:
 
 There are multiple versions of the script runtimes available (full list [here](../README.md)), for example:
 
-- [NoxScript 3 (aka NS3)](https://pkg.go.dev/github.com/noxworld-dev/noxscript/ns/v3) - compatible with original [NoxScript 3](https://noxtools.github.io/noxscript/)
-- [EUD v171](https://pkg.go.dev/github.com/noxworld-dev/noxscript/eud/v171) - compatible with Panic's [EUD project](https://gitlab.com/happysoft3/eud-maps-project/-/tree/master/eud_project/libs)
-- [NoxScript 4 (aka NS4)](https://pkg.go.dev/github.com/noxworld-dev/noxscript/ns/v4) - our new script runtime (**recommended**)
+- [NoxScript 3 (aka NS3)](https://pkg.go.dev/github.com/opennox/noxscript/ns/v3) - compatible with original [NoxScript 3](https://noxtools.github.io/noxscript/)
+- [EUD v171](https://pkg.go.dev/github.com/opennox/noxscript/eud/v171) - compatible with Panic's [EUD project](https://gitlab.com/happysoft3/eud-maps-project/-/tree/master/eud_project/libs)
+- [NoxScript 4 (aka NS4)](https://pkg.go.dev/github.com/opennox/noxscript/ns/v4) - our new script runtime (**recommended**)
 
 The way these runtime works is that usually one of them is the main runtime (**NS4** in this case),
 which provides all functionality available in OpenNox. Other runtimes are only a layer on top of it.
@@ -118,7 +118,7 @@ package example
 import (
     "fmt"
     
-    "github.com/noxworld-dev/noxscript/ns/v4"
+    "github.com/opennox/noxscript/ns/v4"
 )
 
 func OnFrame() {
@@ -141,8 +141,8 @@ package example
 import (
     "fmt"
     
-    ns3 "github.com/noxworld-dev/noxscript/ns/v3"
-    ns4 "github.com/noxworld-dev/noxscript/ns/v4"
+    ns3 "github.com/opennox/noxscript/ns/v3"
+    ns4 "github.com/opennox/noxscript/ns/v4"
 )
 
 func OnFrame() {
@@ -159,8 +159,8 @@ package example
 import (
     "fmt"
     
-    . "github.com/noxworld-dev/noxscript/ns/v3"
-    ns4 "github.com/noxworld-dev/noxscript/ns/v4"
+    . "github.com/opennox/noxscript/ns/v3"
+    ns4 "github.com/opennox/noxscript/ns/v4"
 )
 
 func OnFrame() {
@@ -193,14 +193,14 @@ However, the IDE will not see new functions in the new runtime version, unless i
 The easiest way to update is to open `go.mod` file in the map folder and find the line with the runtime you want to update:
 ```
 require (
-    github.com/noxworld-dev/noxscript/ns/v4 v4.3.0
+    github.com/opennox/noxscript/ns/v4 v4.3.0
     // ... other lines
 )
 ```
 
 Just update the version there, and run `go mod tidy`.
-The full list of version is available by clicking on the version in the [script documentation](https://pkg.go.dev/github.com/noxworld-dev/noxscript/ns/v4?tab=versions) 
-and on the [GitHub](https://github.com/noxworld-dev/noxscript/tags).
+The full list of version is available by clicking on the version in the [script documentation](https://pkg.go.dev/github.com/opennox/noxscript/ns/v4?tab=versions) 
+and on the [GitHub](https://github.com/opennox/noxscript/tags).
 
 ## Packages
 
@@ -225,5 +225,5 @@ An interactive [Go tour](https://go.dev/tour/) is a great place to start.
 Some of your questions may be answered already in [Q&A](./questions-and-answers.md).
 There are [examples](../examples) available as well.
 
-If your question is not covered, please send a question [here](https://github.com/noxworld-dev/noxscript/discussions/new?category=q-a)
+If your question is not covered, please send a question [here](https://github.com/opennox/noxscript/discussions/new?category=q-a)
 or in our [Discord](https://discord.gg/HgDUeXhAyW).

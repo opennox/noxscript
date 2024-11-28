@@ -1,4 +1,4 @@
-module github.com/noxworld-dev/noxscript/ns
+module github.com/opennox/noxscript/ns
 
 go 1.21
 

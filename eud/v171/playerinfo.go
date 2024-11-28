@@ -1,8 +1,8 @@
 package eud
 
 import (
-	ns3 "github.com/noxworld-dev/noxscript/ns/v3"
-	ns4 "github.com/noxworld-dev/noxscript/ns/v4"
+	ns3 "github.com/opennox/noxscript/ns/v3"
+	ns4 "github.com/opennox/noxscript/ns/v4"
 )
 
 func GetPlayerIndex(unit ns3.ObjectID) int {

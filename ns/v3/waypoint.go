@@ -1,6 +1,6 @@
 package ns
 
-import ns4 "github.com/noxworld-dev/noxscript/ns/v4"
+import ns4 "github.com/opennox/noxscript/ns/v4"
 
 type WaypointID int
 

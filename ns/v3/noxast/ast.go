@@ -12,9 +12,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/noxworld-dev/noxscript/ns/asm"
+	"github.com/opennox/noxscript/ns/asm"
 
-	ns3 "github.com/noxworld-dev/noxscript/ns/v3"
+	ns3 "github.com/opennox/noxscript/ns/v3"
 )
 
 var (

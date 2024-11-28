@@ -1,8 +1,8 @@
 package ns
 
 import (
-	"github.com/noxworld-dev/opennox-lib/object"
-	"github.com/noxworld-dev/opennox-lib/wall"
+	"github.com/opennox/libs/object"
+	"github.com/opennox/libs/wall"
 )
 
 // ObjCond checks if object matches a certain condition.

@@ -3,8 +3,8 @@ package nstest
 import (
 	"testing"
 
-	"github.com/noxworld-dev/opennox-lib/object"
-	"github.com/noxworld-dev/opennox-lib/types"
+	"github.com/opennox/libs/object"
+	"github.com/opennox/libs/types"
 	"github.com/shoenig/test/must"
 )
 

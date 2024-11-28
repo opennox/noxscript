@@ -1,6 +1,6 @@
 package ns
 
-import ns4 "github.com/noxworld-dev/noxscript/ns/v4"
+import ns4 "github.com/opennox/noxscript/ns/v4"
 
 // Unused1f is not used in scripts. Does nothing, but kept for compatibility.
 //

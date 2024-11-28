@@ -4,15 +4,15 @@ import (
 	"image"
 	"time"
 
-	"github.com/noxworld-dev/opennox-lib/object"
-	"github.com/noxworld-dev/opennox-lib/player"
-	"github.com/noxworld-dev/opennox-lib/types"
+	"github.com/opennox/libs/object"
+	"github.com/opennox/libs/player"
+	"github.com/opennox/libs/types"
 
-	"github.com/noxworld-dev/noxscript/ns/v4/class"
-	"github.com/noxworld-dev/noxscript/ns/v4/damage"
-	"github.com/noxworld-dev/noxscript/ns/v4/enchant"
-	"github.com/noxworld-dev/noxscript/ns/v4/spell"
-	"github.com/noxworld-dev/noxscript/ns/v4/subclass"
+	"github.com/opennox/noxscript/ns/v4/class"
+	"github.com/opennox/noxscript/ns/v4/damage"
+	"github.com/opennox/noxscript/ns/v4/enchant"
+	"github.com/opennox/noxscript/ns/v4/spell"
+	"github.com/opennox/noxscript/ns/v4/subclass"
 )
 
 type Point = image.Point

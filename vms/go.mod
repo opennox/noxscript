@@ -1,4 +1,4 @@
-module github.com/noxworld-dev/noxscript/vms
+module github.com/opennox/noxscript/vms
 
 go 1.21
 

@@ -1,9 +1,9 @@
 package ns
 
 import (
-	"github.com/noxworld-dev/opennox-lib/player"
+	"github.com/opennox/libs/player"
 
-	ns4 "github.com/noxworld-dev/noxscript/ns/v4"
+	ns4 "github.com/opennox/noxscript/ns/v4"
 )
 
 // GetHost gets host's player object.

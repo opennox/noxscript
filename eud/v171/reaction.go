@@ -1,6 +1,6 @@
 package eud
 
-import ns3 "github.com/noxworld-dev/noxscript/ns/v3"
+import ns3 "github.com/opennox/noxscript/ns/v3"
 
 func CheckPlayerInput(plr ns3.ObjectID) int {
 	panic("not implemented")

@@ -8,13 +8,13 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/noxworld-dev/opennox-lib/ifs"
-	"github.com/noxworld-dev/opennox-lib/maps"
-	"github.com/noxworld-dev/opennox-lib/noxtest"
+	"github.com/opennox/libs/ifs"
+	"github.com/opennox/libs/maps"
+	"github.com/opennox/libs/noxtest"
 	"github.com/shoenig/test/must"
 
-	"github.com/noxworld-dev/noxscript/ns/asm"
-	"github.com/noxworld-dev/noxscript/ns/v3/noxast"
+	"github.com/opennox/noxscript/ns/asm"
+	"github.com/opennox/noxscript/ns/v3/noxast"
 )
 
 func TestTranslate(t *testing.T) {

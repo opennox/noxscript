@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/noxworld-dev/noxscript/ns/v3/cmd"
-	"github.com/noxworld-dev/noxscript/ns/v3/noxast"
+	"github.com/opennox/noxscript/ns/v3/cmd"
+	"github.com/opennox/noxscript/ns/v3/noxast"
 )
 
 func main() {

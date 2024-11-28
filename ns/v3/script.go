@@ -3,7 +3,7 @@ package ns
 import (
 	"strconv"
 
-	ns4 "github.com/noxworld-dev/noxscript/ns/v4"
+	ns4 "github.com/opennox/noxscript/ns/v4"
 )
 
 // Source:

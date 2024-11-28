@@ -3,7 +3,7 @@ package vm
 import (
 	"math"
 
-	ns3 "github.com/noxworld-dev/noxscript/ns/v3"
+	ns3 "github.com/opennox/noxscript/ns/v3"
 )
 
 // Value is an untyped value, as stored in NoxScript runtime.

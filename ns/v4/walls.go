@@ -1,6 +1,6 @@
 package ns
 
-import "github.com/noxworld-dev/opennox-lib/wall"
+import "github.com/opennox/libs/wall"
 
 // NoWallSound enables or disables wall sounds.
 func NoWallSound(noWallSound bool) {

@@ -1,8 +1,8 @@
 package ns
 
 import (
-	"github.com/noxworld-dev/opennox-lib/player"
-	"github.com/noxworld-dev/opennox-lib/types"
+	"github.com/opennox/libs/player"
+	"github.com/opennox/libs/types"
 )
 
 // PlayerJoinFunc is a callback type for OnPlayerJoin.

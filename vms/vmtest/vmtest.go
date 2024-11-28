@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/noxworld-dev/noxscript/vms"
+	"github.com/opennox/noxscript/vms"
 )
 
 var _ vms.Engine = &Engine{}

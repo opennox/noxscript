@@ -6,11 +6,11 @@ import (
 	"slices"
 	"sync/atomic"
 
-	"github.com/noxworld-dev/opennox-lib/player"
-	"github.com/noxworld-dev/opennox-lib/types"
+	"github.com/opennox/libs/player"
+	"github.com/opennox/libs/types"
 	"golang.org/x/exp/maps"
 
-	"github.com/noxworld-dev/noxscript/ns/v4"
+	"github.com/opennox/noxscript/ns/v4"
 )
 
 type Players struct {

@@ -5,7 +5,7 @@ import (
 	"math"
 	"strings"
 
-	"github.com/noxworld-dev/noxscript/ns/asm"
+	"github.com/opennox/noxscript/ns/asm"
 )
 
 type ObjID int

@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/noxworld-dev/noxscript/ns/asm"
+	"github.com/opennox/noxscript/ns/asm"
 )
 
 func (r *Runtime) newFunc(def *asm.FuncDef) *Func {

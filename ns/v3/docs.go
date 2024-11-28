@@ -6,5 +6,5 @@
 // Package provides additional type safety by using named types, booleans, etc.
 // It does not expose object-oriented APIs which are typical to Go.
 //
-// See NS4 for object-oriented API: https://pkg.go.dev/github.com/noxworld-dev/noxscript/ns/v4.
+// See NS4 for object-oriented API: https://pkg.go.dev/github.com/opennox/noxscript/ns/v4.
 package ns

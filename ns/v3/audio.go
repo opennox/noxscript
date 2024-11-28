@@ -1,8 +1,8 @@
 package ns
 
 import (
-	ns4 "github.com/noxworld-dev/noxscript/ns/v4"
-	"github.com/noxworld-dev/noxscript/ns/v4/audio"
+	ns4 "github.com/opennox/noxscript/ns/v4"
+	"github.com/opennox/noxscript/ns/v4/audio"
 )
 
 // AudioEvent plays an audio event at a location.

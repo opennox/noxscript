@@ -1,10 +1,10 @@
 package ns
 
 import (
-	ns4 "github.com/noxworld-dev/noxscript/ns/v4"
-	"github.com/noxworld-dev/noxscript/ns/v4/effect"
-	"github.com/noxworld-dev/noxscript/ns/v4/enchant"
-	"github.com/noxworld-dev/noxscript/ns/v4/spell"
+	ns4 "github.com/opennox/noxscript/ns/v4"
+	"github.com/opennox/noxscript/ns/v4/effect"
+	"github.com/opennox/noxscript/ns/v4/enchant"
+	"github.com/opennox/noxscript/ns/v4/spell"
 )
 
 // AwardSpell award spell level to object.

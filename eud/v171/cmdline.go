@@ -1,7 +1,7 @@
 package eud
 
 import (
-	"github.com/noxworld-dev/opennox-lib/script"
+	"github.com/opennox/libs/script"
 )
 
 const (

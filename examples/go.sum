@@ -1,6 +1,6 @@
-github.com/noxworld-dev/noxscript/ns/v3 v3.4.2 h1:cvwGW7Cnx7nIurippYXiG17ft3brxjOtW3TWIiLsZ2s=
-github.com/noxworld-dev/noxscript/ns/v3 v3.4.2/go.mod h1:oouTgZPYQ/MeLLkpQsYwU7n+oIwfXB4DryLU0UhSj98=
-github.com/noxworld-dev/noxscript/ns/v4 v4.15.0 h1:SAG4b60ATvijAJU0cZB7NFsxBsuaVrxRCNEME6WfOdk=
-github.com/noxworld-dev/noxscript/ns/v4 v4.15.0/go.mod h1:WBjQ4d1EfR21jqpwpQXtHLTX/62kq4w46QeEC9Dgf98=
-github.com/noxworld-dev/opennox-lib v0.0.0-20231223202647-2edb32a7206a h1:vX+fYi+wU8lGaARkKvId0SBTWtvgjNFUwBdP6vh0QrI=
-github.com/noxworld-dev/opennox-lib v0.0.0-20231223202647-2edb32a7206a/go.mod h1:ms2JDbcqvnqRriGZot4c010y6d2ZZTbFtwn9De1SbPw=
+github.com/opennox/noxscript/ns/v3 v3.4.2 h1:cvwGW7Cnx7nIurippYXiG17ft3brxjOtW3TWIiLsZ2s=
+github.com/opennox/noxscript/ns/v3 v3.4.2/go.mod h1:oouTgZPYQ/MeLLkpQsYwU7n+oIwfXB4DryLU0UhSj98=
+github.com/opennox/noxscript/ns/v4 v4.15.0 h1:SAG4b60ATvijAJU0cZB7NFsxBsuaVrxRCNEME6WfOdk=
+github.com/opennox/noxscript/ns/v4 v4.15.0/go.mod h1:WBjQ4d1EfR21jqpwpQXtHLTX/62kq4w46QeEC9Dgf98=
+github.com/opennox/libs v0.0.0-20231223202647-2edb32a7206a h1:vX+fYi+wU8lGaARkKvId0SBTWtvgjNFUwBdP6vh0QrI=
+github.com/opennox/libs v0.0.0-20231223202647-2edb32a7206a/go.mod h1:ms2JDbcqvnqRriGZot4c010y6d2ZZTbFtwn9De1SbPw=

@@ -1,8 +1,8 @@
 package ns
 
 import (
-	"github.com/noxworld-dev/noxscript/ns/v4/effect"
-	"github.com/noxworld-dev/noxscript/ns/v4/spell"
+	"github.com/opennox/noxscript/ns/v4/effect"
+	"github.com/opennox/noxscript/ns/v4/spell"
 )
 
 // Effect triggers an effect from point p1 to p2.

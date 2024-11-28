@@ -1,6 +1,6 @@
 # Questions and Answers
 
-If your question is not covered here, please send it to us [on GitHub](https://github.com/noxworld-dev/noxscript/discussions/new?category=q-a)
+If your question is not covered here, please send it to us [on GitHub](https://github.com/opennox/noxscript/discussions/new?category=q-a)
 or in our [Discord](https://discord.gg/HgDUeXhAyW).
 
 ## How do I start?
