@@ -1,22 +1,21 @@
 module github.com/opennox/noxscript/ns/v3
 
-go 1.21
+go 1.22.0
 
-toolchain go1.21.5
+toolchain go1.23.3
 
 require (
-	github.com/opennox/noxscript/ns v1.0.2
-	github.com/opennox/noxscript/ns/v4 v4.14.0
-	github.com/opennox/libs v0.0.0-20240106132033-e8abe68bd8d5
-	github.com/shoenig/test v1.7.0
+	github.com/opennox/libs v0.0.0-20241128132302-f1b7d55a6c0f
+	github.com/opennox/noxscript/ns v1.0.3
+	github.com/opennox/noxscript/ns/v4 v4.21.1
+	github.com/shoenig/test v1.12.0
 )
 
 require (
 	github.com/google/go-cmp v0.6.0 // indirect
 	github.com/julienschmidt/httprouter v1.3.0 // indirect
-	github.com/opennox/noxcrypt v0.0.0-20230831140413-02623e75408e // indirect
-	github.com/stretchr/testify v1.8.4 // indirect
-	golang.org/x/crypto v0.12.0 // indirect
-	golang.org/x/exp v0.0.0-20231110203233-9a3e6036ecaa // indirect
-	golang.org/x/sys v0.14.0 // indirect
+	github.com/opennox/noxcrypt v0.1.0 // indirect
+	golang.org/x/crypto v0.29.0 // indirect
+	golang.org/x/exp v0.0.0-20241108190413-2d47ceb2692f // indirect
+	golang.org/x/sys v0.27.0 // indirect
 )
