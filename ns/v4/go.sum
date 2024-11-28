@@ -1,7 +1,7 @@
 github.com/google/go-cmp v0.6.0 h1:ofyhxvXcZhMsU5ulbFiLKl/XBFqE1GSq7atu8tAmTRI=
 github.com/google/go-cmp v0.6.0/go.mod h1:17dUlkBOakJ0+DkrSSNjCkIjxS6bF9zb3elmeNGIjoY=
-github.com/opennox/libs v0.0.0-20241128132302-f1b7d55a6c0f h1:AIyfRV05CK0+VXq8oVzO50zNEJvHVYCnaiGdyUeUlVo=
-github.com/opennox/libs v0.0.0-20241128132302-f1b7d55a6c0f/go.mod h1:BrVl9RUHpYDzwUzJ91Ac5f2cryTKaSpzvpR99gF7grQ=
+github.com/opennox/libs v0.0.0-20241128181020-dd3509f009ee h1:wsD9q7teviEfCiHCeJeoDD5naMzCKUKJPtXbFaf/qbc=
+github.com/opennox/libs v0.0.0-20241128181020-dd3509f009ee/go.mod h1:cMz08yfVhiD0XeMSs1g9m4RZiFuQTZjQkkoCJBjXnGc=
 github.com/shoenig/test v1.12.0 h1:5gu0WaxkayLUad6B/VCnBWMi5VR7oVYCw/d34SU1ed0=
 github.com/shoenig/test v1.12.0/go.mod h1:UxJ6u/x2v/TNs/LoLxBNJRV9DiwBBKYxXSyczsBHFoI=
 golang.org/x/exp v0.0.0-20241108190413-2d47ceb2692f h1:XdNn9LlyWAhLVp6P/i8QYBW+hlyhrhei9uErw2B5GJo=
