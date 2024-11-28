@@ -1,11 +1,11 @@
 github.com/google/go-cmp v0.6.0 h1:ofyhxvXcZhMsU5ulbFiLKl/XBFqE1GSq7atu8tAmTRI=
 github.com/google/go-cmp v0.6.0/go.mod h1:17dUlkBOakJ0+DkrSSNjCkIjxS6bF9zb3elmeNGIjoY=
-github.com/opennox/libs v0.0.0-20241128182501-2dab81a0deab h1:CPoLJAeBBGLvOXchHaOJ7X90ohigKV4zt9Buk8TDldI=
-github.com/opennox/libs v0.0.0-20241128182501-2dab81a0deab/go.mod h1:55T8H5ZAb8TiZps6jOzF/SdtzwGm5LkBojP55wOkOh4=
-github.com/opennox/noxscript/ns/v3 v3.4.7 h1:JUnKsFDm5dvkZBc1EbKyvsmqm5B4qMdqDMcALEA7U78=
-github.com/opennox/noxscript/ns/v3 v3.4.7/go.mod h1:+ZlQbnJWaZOdJ+UNTrkHafYicrL0N6N+YrEnREQKxQg=
-github.com/opennox/noxscript/ns/v4 v4.21.3 h1:/gEP/hI0FfsrDPyNt/qUHZfiVTbl6Ag1m3jnkDShF6U=
-github.com/opennox/noxscript/ns/v4 v4.21.3/go.mod h1:cQfcjhxYAlMft8fZdUEHGMbOJypRjNVnigWnYo5uEkM=
+github.com/opennox/libs v0.0.0-20241128194711-7857287f593a h1:s5uuIjXMV4dBniz2oz7XXXZSWTuo9ZAjeb+ONDiRufI=
+github.com/opennox/libs v0.0.0-20241128194711-7857287f593a/go.mod h1:EQFPPj1sI/8PJq29sC102R+nw0BJeHlbOnAD1/e8PAc=
+github.com/opennox/noxscript/ns/v3 v3.4.8 h1:IBVrPnC9Hswm3Ax2dGDuJ023DeXqwia9dvcnN4I0Qv0=
+github.com/opennox/noxscript/ns/v3 v3.4.8/go.mod h1:7aiCe1OjFNRoEOYLIxAitR3vRoWuKrHUIs3dhJd5etY=
+github.com/opennox/noxscript/ns/v4 v4.21.4 h1:Lvq5Z+WHJ6DoW0tzcArz2g9ul7Ni5GE7AlC5v3ULlHE=
+github.com/opennox/noxscript/ns/v4 v4.21.4/go.mod h1:JKJYzbAfxTsDDkqCVnSa5ezr3xxlA5q76AAVOORAYLc=
 github.com/shoenig/test v1.12.0 h1:5gu0WaxkayLUad6B/VCnBWMi5VR7oVYCw/d34SU1ed0=
 github.com/shoenig/test v1.12.0/go.mod h1:UxJ6u/x2v/TNs/LoLxBNJRV9DiwBBKYxXSyczsBHFoI=
 golang.org/x/exp v0.0.0-20241108190413-2d47ceb2692f h1:XdNn9LlyWAhLVp6P/i8QYBW+hlyhrhei9uErw2B5GJo=
