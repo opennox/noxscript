@@ -5,7 +5,7 @@ go 1.22.0
 toolchain go1.23.3
 
 require (
-	github.com/opennox/libs v0.0.0-20241128181020-dd3509f009ee
+	github.com/opennox/libs v0.0.0-20241128182501-2dab81a0deab
 	github.com/shoenig/test v1.12.0
 	golang.org/x/exp v0.0.0-20241108190413-2d47ceb2692f
 )

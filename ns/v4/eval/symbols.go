@@ -10,6 +10,7 @@ import "reflect"
 //go:generate yaegi extract github.com/opennox/noxscript/ns/v4/enchant
 //go:generate yaegi extract github.com/opennox/noxscript/ns/v4/spell
 //go:generate yaegi extract github.com/opennox/noxscript/ns/v4/subclass
+
 //go:generate goimports -w .
 
 var Symbols = make(map[string]map[string]reflect.Value)
