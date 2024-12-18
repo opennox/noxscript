@@ -657,6 +657,18 @@ type Obj interface {
 	// SetSightRange sets a creature's sight level. Default value for NPCs is 150.
 	SetSightRange(val float32)
 
+	// Weight returns weight of this object when placed in the inventory.
+	Weight() int
+
+	// InventoryWeight returns total weight of all inventory items.
+	InventoryWeight() int
+
+	// CarryMaxWeight returns total items weight that an object can carry.
+	CarryMaxWeight() int
+
+	// SetCarryMaxWeight sets total items weight that an object can carry.
+	SetCarryMaxWeight(v int)
+
 	// AggressionLevel sets a creature's aggression level. The most commonly used value is 0.83.
 	AggressionLevel(level float32)
 

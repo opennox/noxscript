@@ -806,6 +806,7 @@ type _github_com_opennox_noxscript_ns_v4_Obj struct {
 	WAwardSpell             func(spell spell.Spell) bool
 	WBaseSpeed              func() float32
 	WCanSee                 func(obj ns.Obj) bool
+	WCarryMaxWeight         func() int
 	WChangeGold             func(delta int)
 	WChangeScore            func(score int)
 	WChat                   func(message string)
@@ -862,6 +863,7 @@ type _github_com_opennox_noxscript_ns_v4_Obj struct {
 	WIdle                   func()
 	WInEquipment            func() ns.ObjSearcher
 	WInItems                func() ns.ObjSearcher
+	WInventoryWeight        func() int
 	WIsAttackedBy           func(by ns.Obj) bool
 	WIsEnabled              func() bool
 	WIsLocked               func() bool
@@ -891,6 +893,7 @@ type _github_com_opennox_noxscript_ns_v4_Obj struct {
 	WReturn                 func()
 	WScriptID               func() int
 	WSetBaseSpeed           func(v float32)
+	WSetCarryMaxWeight      func(v int)
 	WSetColor               func(ind int, cl color.Color)
 	WSetDisplayName         func(name string, cl color.Color)
 	WSetFlags               func(v object.Flags)
@@ -920,6 +923,7 @@ type _github_com_opennox_noxscript_ns_v4_Obj struct {
 	WVel                    func() types.Pointf
 	WWalkTo                 func(p types.Pointf)
 	WWander                 func()
+	WWeight                 func() int
 	WZ                      func() float32
 	WZombieStayDown         func()
 }
@@ -941,6 +945,9 @@ func (W _github_com_opennox_noxscript_ns_v4_Obj) BaseSpeed() float32 {
 }
 func (W _github_com_opennox_noxscript_ns_v4_Obj) CanSee(obj ns.Obj) bool {
 	return W.WCanSee(obj)
+}
+func (W _github_com_opennox_noxscript_ns_v4_Obj) CarryMaxWeight() int {
+	return W.WCarryMaxWeight()
 }
 func (W _github_com_opennox_noxscript_ns_v4_Obj) ChangeGold(delta int) {
 	W.WChangeGold(delta)
@@ -1110,6 +1117,9 @@ func (W _github_com_opennox_noxscript_ns_v4_Obj) InEquipment() ns.ObjSearcher {
 func (W _github_com_opennox_noxscript_ns_v4_Obj) InItems() ns.ObjSearcher {
 	return W.WInItems()
 }
+func (W _github_com_opennox_noxscript_ns_v4_Obj) InventoryWeight() int {
+	return W.WInventoryWeight()
+}
 func (W _github_com_opennox_noxscript_ns_v4_Obj) IsAttackedBy(by ns.Obj) bool {
 	return W.WIsAttackedBy(by)
 }
@@ -1197,6 +1207,9 @@ func (W _github_com_opennox_noxscript_ns_v4_Obj) ScriptID() int {
 func (W _github_com_opennox_noxscript_ns_v4_Obj) SetBaseSpeed(v float32) {
 	W.WSetBaseSpeed(v)
 }
+func (W _github_com_opennox_noxscript_ns_v4_Obj) SetCarryMaxWeight(v int) {
+	W.WSetCarryMaxWeight(v)
+}
 func (W _github_com_opennox_noxscript_ns_v4_Obj) SetColor(ind int, cl color.Color) {
 	W.WSetColor(ind, cl)
 }
@@ -1283,6 +1296,9 @@ func (W _github_com_opennox_noxscript_ns_v4_Obj) WalkTo(p types.Pointf) {
 }
 func (W _github_com_opennox_noxscript_ns_v4_Obj) Wander() {
 	W.WWander()
+}
+func (W _github_com_opennox_noxscript_ns_v4_Obj) Weight() int {
+	return W.WWeight()
 }
 func (W _github_com_opennox_noxscript_ns_v4_Obj) Z() float32 {
 	return W.WZ()
