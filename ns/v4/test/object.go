@@ -123,24 +123,26 @@ func toObj(v ns.Obj) *Object {
 }
 
 type Object struct {
-	r         *Runtime
-	id        uint32
-	name      string
-	typ       *ObjectType
-	class     object.Class
-	flags     object.Flags
-	frozen    bool
-	holder    *Object
-	inventory map[*Object]struct{}
-	equipment map[*Object]struct{}
-	targetPos *types.Pointf
-	targetObj *Object
-	collide   []func()
-	PosVec    types.Pointf
-	VelVec    types.Pointf
-	ZVal      float32
-	PlayerPtr *Player
-	label     string
+	r              *Runtime
+	id             uint32
+	name           string
+	typ            *ObjectType
+	class          object.Class
+	flags          object.Flags
+	frozen         bool
+	holder         *Object
+	inventory      map[*Object]struct{}
+	equipment      map[*Object]struct{}
+	targetPos      *types.Pointf
+	targetObj      *Object
+	collide        []func()
+	PosVec         types.Pointf
+	VelVec         types.Pointf
+	ZVal           float32
+	WeightVal      int
+	CarryWeightVal int
+	PlayerPtr      *Player
+	label          string
 }
 
 func (obj *Object) asObj() ns.Obj {
@@ -599,6 +601,26 @@ func (obj *Object) GetLastItem() ns.Obj {
 func (obj *Object) GetPreviousItem() ns.Obj {
 	//TODO implement me
 	panic("implement me")
+}
+
+func (obj *Object) Weight() int {
+	return obj.WeightVal
+}
+
+func (obj *Object) InventoryWeight() int {
+	total := 0
+	for it := range obj.inventory {
+		total += it.Weight()
+	}
+	return total
+}
+
+func (obj *Object) CarryMaxWeight() int {
+	return obj.CarryWeightVal
+}
+
+func (obj *Object) SetCarryMaxWeight(v int) {
+	obj.CarryWeightVal = v
 }
 
 func (obj *Object) Items(conditions ...ns.ObjCond) []ns.Obj {
