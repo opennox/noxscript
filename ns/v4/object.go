@@ -60,7 +60,7 @@ const (
 )
 
 // ObjectType looks up an object type by name.
-func ObjectType(name string) ObjType {
+func ObjectType(name ObjTypeName) ObjType {
 	if impl == nil {
 		return nil
 	}
@@ -79,7 +79,7 @@ func ObjectTypeByInd(ind int) ObjType {
 //
 //	Example:
 //	  spider := CreateObject("SmallAlbinoSpider", Waypoint("SpiderHole"))
-func CreateObject(typ string, pos Positioner) Obj {
+func CreateObject(typ ObjTypeName, pos Positioner) Obj {
 	if impl == nil {
 		return nil
 	}
@@ -158,9 +158,11 @@ func IsSummoned(obj Obj) bool {
 	return impl.IsSummoned(obj)
 }
 
+type ObjTypeName = string
+
 type ObjType interface {
 	// Name returns object type name.
-	Name() string
+	Name() ObjTypeName
 
 	// Index returns an index of the type in the game's database.
 	// It can be used to quickly compare object types, or as a map key for them.

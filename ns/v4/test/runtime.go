@@ -10,8 +10,10 @@ import (
 	"github.com/opennox/libs/player"
 
 	"github.com/opennox/noxscript/ns/v4"
+	"github.com/opennox/noxscript/ns/v4/abil"
 	"github.com/opennox/noxscript/ns/v4/audio"
 	"github.com/opennox/noxscript/ns/v4/effect"
+	"github.com/opennox/noxscript/ns/v4/enchant"
 	"github.com/opennox/noxscript/ns/v4/spell"
 )
 
@@ -385,6 +387,41 @@ func (r *Runtime) CastSpellLvl(spell spell.Spell, lvl int, source, target ns.Pos
 }
 
 func (r *Runtime) NewTrap(pos ns.Positioner, spells []ns.TrapSpell) ns.Obj {
+	//TODO implement me
+	panic("implement me")
+}
+
+func (r *Runtime) NewHealthPotion(pos ns.Positioner, health int) ns.Obj {
+	//TODO implement me
+	panic("implement me")
+}
+
+func (r *Runtime) NewManaPotion(pos ns.Positioner, mana int) ns.Obj {
+	//TODO implement me
+	panic("implement me")
+}
+
+func (r *Runtime) NewSpellBook(pos ns.Positioner, spell spell.Spell) ns.Obj {
+	//TODO implement me
+	panic("implement me")
+}
+
+func (r *Runtime) NewAbilityBook(pos ns.Positioner, abil abil.Ability) ns.Obj {
+	//TODO implement me
+	panic("implement me")
+}
+
+func (r *Runtime) NewFieldGuide(pos ns.Positioner, creature ns.ObjTypeName) ns.Obj {
+	//TODO implement me
+	panic("implement me")
+}
+
+func (r *Runtime) NewEnchantUseItem(typ ns.ObjTypeName, pos ns.Positioner, enc enchant.Enchant, dur ns.Duration) ns.Obj {
+	//TODO implement me
+	panic("implement me")
+}
+
+func (r *Runtime) NewSpellUseItem(typ ns.ObjTypeName, pos ns.Positioner, spell spell.Spell, lvl int) ns.Obj {
 	//TODO implement me
 	panic("implement me")
 }

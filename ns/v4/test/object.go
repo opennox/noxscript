@@ -73,7 +73,7 @@ func (r *Runtime) FindObjects(fnc func(it ns.Obj) bool, conditions ...ns.ObjCond
 	return list.FindObjects(fnc, conditions...)
 }
 
-func (r *Runtime) CreateObject(typ string, pos ns.Positioner) ns.Obj {
+func (r *Runtime) CreateObject(typ ns.ObjTypeName, pos ns.Positioner) ns.Obj {
 	t := r.ObjectType(typ)
 	if t == nil {
 		return nil

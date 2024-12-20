@@ -39,6 +39,7 @@ func OnPlayerDeath(fnc PlayerDeathFunc) {
 }
 
 type Player interface {
+	Positioner // proxies player's unit
 	// Name returns player's name.
 	Name() string
 	// Unit returns player's character unit.

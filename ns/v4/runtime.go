@@ -5,8 +5,10 @@ import (
 
 	"github.com/opennox/libs/player"
 
+	"github.com/opennox/noxscript/ns/v4/abil"
 	"github.com/opennox/noxscript/ns/v4/audio"
 	"github.com/opennox/noxscript/ns/v4/effect"
+	"github.com/opennox/noxscript/ns/v4/enchant"
 	"github.com/opennox/noxscript/ns/v4/spell"
 )
 
@@ -53,14 +55,14 @@ type Implementation interface {
 	StartupScreen(which int)
 	DeathScreen(which int)
 
-	ObjectType(name string) ObjType
+	ObjectType(name ObjTypeName) ObjType
 	ObjectTypeByInd(ind int) ObjType
 
 	ObjectByHandle(h ObjHandle) Obj
 	Object(name string) Obj
 	ObjectGroupByHandle(h ObjGroupHandle) ObjGroup
 	ObjectGroup(name string) ObjGroup
-	CreateObject(typ string, pos Positioner) Obj
+	CreateObject(typ ObjTypeName, pos Positioner) Obj
 	ObjSearcher
 	GetTrigger() Obj
 	GetCaller() Obj
@@ -116,6 +118,13 @@ type Implementation interface {
 	CastSpell(spell spell.Spell, source, target Positioner)
 	CastSpellLvl(spell spell.Spell, lvl int, source, target Positioner)
 	NewTrap(pos Positioner, spells []TrapSpell) Obj
+	NewHealthPotion(pos Positioner, health int) Obj
+	NewManaPotion(pos Positioner, mana int) Obj
+	NewSpellBook(pos Positioner, spell spell.Spell) Obj
+	NewAbilityBook(pos Positioner, abil abil.Ability) Obj
+	NewFieldGuide(pos Positioner, creature string) Obj
+	NewEnchantUseItem(typ ObjTypeName, pos Positioner, enc enchant.Enchant, dur Duration) Obj
+	NewSpellUseItem(typ ObjTypeName, pos Positioner, spell spell.Spell, lvl int) Obj
 
 	GetQuestStatus(name string) int
 	GetQuestStatusFloat(name string) float32

@@ -176,7 +176,7 @@ func (c HasAllObjFlags) Matches(obj Obj) bool {
 var _ ObjCond = HasTypeName{}
 
 // HasTypeName checks that object matches any of provided type names.
-type HasTypeName []string
+type HasTypeName []ObjTypeName
 
 func (arr HasTypeName) Matches(obj Obj) bool {
 	typ := obj.Type().Name()

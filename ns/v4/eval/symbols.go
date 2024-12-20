@@ -3,6 +3,7 @@ package eval
 import "reflect"
 
 //go:generate yaegi extract github.com/opennox/noxscript/ns/v4
+//go:generate yaegi extract github.com/opennox/noxscript/ns/v4/abil
 //go:generate yaegi extract github.com/opennox/noxscript/ns/v4/audio
 //go:generate yaegi extract github.com/opennox/noxscript/ns/v4/class
 //go:generate yaegi extract github.com/opennox/noxscript/ns/v4/damage

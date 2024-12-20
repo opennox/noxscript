@@ -13,6 +13,7 @@ import (
 	"github.com/opennox/libs/types"
 	"github.com/opennox/libs/wall"
 	"github.com/opennox/noxscript/ns/v4"
+	"github.com/opennox/noxscript/ns/v4/abil"
 	"github.com/opennox/noxscript/ns/v4/audio"
 	"github.com/opennox/noxscript/ns/v4/class"
 	"github.com/opennox/noxscript/ns/v4/damage"
@@ -129,6 +130,16 @@ func init() {
 		"N":                    reflect.ValueOf(ns.N),
 		"NE":                   reflect.ValueOf(ns.NE),
 		"NW":                   reflect.ValueOf(ns.NW),
+		"NewAbilityBook":       reflect.ValueOf(ns.NewAbilityBook),
+		"NewEnchantUseItem":    reflect.ValueOf(ns.NewEnchantUseItem),
+		"NewFieldGuide":        reflect.ValueOf(ns.NewFieldGuide),
+		"NewGold":              reflect.ValueOf(ns.NewGold),
+		"NewGoldChest":         reflect.ValueOf(ns.NewGoldChest),
+		"NewGoldPile":          reflect.ValueOf(ns.NewGoldPile),
+		"NewHealthPotion":      reflect.ValueOf(ns.NewHealthPotion),
+		"NewManaPotion":        reflect.ValueOf(ns.NewManaPotion),
+		"NewSpellBook":         reflect.ValueOf(ns.NewSpellBook),
+		"NewSpellUseItem":      reflect.ValueOf(ns.NewSpellUseItem),
 		"NewTimer":             reflect.ValueOf(ns.NewTimer),
 		"NewTrap":              reflect.ValueOf(ns.NewTrap),
 		"NewTrapAdv":           reflect.ValueOf(ns.NewTrapAdv),
@@ -247,6 +258,7 @@ func init() {
 		"ObjHandle":           reflect.ValueOf((*ns.ObjHandle)(nil)),
 		"ObjSearcher":         reflect.ValueOf((*ns.ObjSearcher)(nil)),
 		"ObjType":             reflect.ValueOf((*ns.ObjType)(nil)),
+		"ObjTypeName":         reflect.ValueOf((*ns.ObjTypeName)(nil)),
 		"ObjectEvent":         reflect.ValueOf((*ns.ObjectEvent)(nil)),
 		"Objects":             reflect.ValueOf((*ns.Objects)(nil)),
 		"Persistent":          reflect.ValueOf((*ns.Persistent)(nil)),
@@ -396,6 +408,13 @@ type _github_com_opennox_noxscript_ns_v4_Implementation struct {
 	WMusicEvent            func()
 	WMusicPopEvent         func()
 	WMusicPushEvent        func()
+	WNewAbilityBook        func(pos ns.Positioner, abil abil.Ability) ns.Obj
+	WNewEnchantUseItem     func(typ string, pos ns.Positioner, enc enchant.Enchant, dur ns.Duration) ns.Obj
+	WNewFieldGuide         func(pos ns.Positioner, creature string) ns.Obj
+	WNewHealthPotion       func(pos ns.Positioner, health int) ns.Obj
+	WNewManaPotion         func(pos ns.Positioner, mana int) ns.Obj
+	WNewSpellBook          func(pos ns.Positioner, spell spell.Spell) ns.Obj
+	WNewSpellUseItem       func(typ string, pos ns.Positioner, spell spell.Spell, lvl int) ns.Obj
 	WNewTimer              func(dt ns.Duration, fnc any, args ...any) ns.Timer
 	WNewTrap               func(pos ns.Positioner, spells []ns.TrapSpell) ns.Obj
 	WNewWaypoint           func(name string, pos types.Pointf) ns.WaypointObj
@@ -603,6 +622,27 @@ func (W _github_com_opennox_noxscript_ns_v4_Implementation) MusicPopEvent() {
 }
 func (W _github_com_opennox_noxscript_ns_v4_Implementation) MusicPushEvent() {
 	W.WMusicPushEvent()
+}
+func (W _github_com_opennox_noxscript_ns_v4_Implementation) NewAbilityBook(pos ns.Positioner, abil abil.Ability) ns.Obj {
+	return W.WNewAbilityBook(pos, abil)
+}
+func (W _github_com_opennox_noxscript_ns_v4_Implementation) NewEnchantUseItem(typ string, pos ns.Positioner, enc enchant.Enchant, dur ns.Duration) ns.Obj {
+	return W.WNewEnchantUseItem(typ, pos, enc, dur)
+}
+func (W _github_com_opennox_noxscript_ns_v4_Implementation) NewFieldGuide(pos ns.Positioner, creature string) ns.Obj {
+	return W.WNewFieldGuide(pos, creature)
+}
+func (W _github_com_opennox_noxscript_ns_v4_Implementation) NewHealthPotion(pos ns.Positioner, health int) ns.Obj {
+	return W.WNewHealthPotion(pos, health)
+}
+func (W _github_com_opennox_noxscript_ns_v4_Implementation) NewManaPotion(pos ns.Positioner, mana int) ns.Obj {
+	return W.WNewManaPotion(pos, mana)
+}
+func (W _github_com_opennox_noxscript_ns_v4_Implementation) NewSpellBook(pos ns.Positioner, spell spell.Spell) ns.Obj {
+	return W.WNewSpellBook(pos, spell)
+}
+func (W _github_com_opennox_noxscript_ns_v4_Implementation) NewSpellUseItem(typ string, pos ns.Positioner, spell spell.Spell, lvl int) ns.Obj {
+	return W.WNewSpellUseItem(typ, pos, spell, lvl)
 }
 func (W _github_com_opennox_noxscript_ns_v4_Implementation) NewTimer(dt ns.Duration, fnc any, args ...any) ns.Timer {
 	return W.WNewTimer(dt, fnc, args...)
@@ -1559,6 +1599,7 @@ type _github_com_opennox_noxscript_ns_v4_Player struct {
 	WGetScore    func() int
 	WHasTeam     func(t ns.Team) bool
 	WName        func() string
+	WPos         func() types.Pointf
 	WPrint       func(message string)
 	WPrintStr    func(message string)
 	WStore       func(typ ns.StorageType) ns.Storage
@@ -1583,6 +1624,9 @@ func (W _github_com_opennox_noxscript_ns_v4_Player) HasTeam(t ns.Team) bool {
 }
 func (W _github_com_opennox_noxscript_ns_v4_Player) Name() string {
 	return W.WName()
+}
+func (W _github_com_opennox_noxscript_ns_v4_Player) Pos() types.Pointf {
+	return W.WPos()
 }
 func (W _github_com_opennox_noxscript_ns_v4_Player) Print(message string) {
 	W.WPrint(message)

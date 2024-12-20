@@ -82,6 +82,13 @@ func (p *Player) Name() string {
 	return p.name
 }
 
+func (p *Player) Pos() ns.Pointf {
+	if p.UnitPtr == nil {
+		return ns.Pointf{}
+	}
+	return p.Unit().Pos()
+}
+
 func (p *Player) Unit() ns.Obj {
 	return p.UnitPtr.asObj()
 }
