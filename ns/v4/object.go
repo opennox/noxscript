@@ -645,6 +645,9 @@ type Obj interface {
 	// It does not localize the string.
 	ChatStrTimer(message string, dt Duration)
 
+	// SetShopText sets shopkeeper test for this object.
+	SetShopText(message StringID)
+
 	// DestroyChat destroys object's speech bubble.
 	DestroyChat()
 

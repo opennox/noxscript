@@ -751,6 +751,10 @@ func (obj *Object) DestroyChat() {
 	//TODO implement me
 }
 
+func (obj *Object) SetShopText(message ns.StringID) {
+	//TODO implement me
+}
+
 func (obj *Object) CreateMover(wp ns.WaypointObj, speed float32) ns.Obj {
 	//TODO implement me
 	panic("implement me")
