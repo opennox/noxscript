@@ -44,6 +44,9 @@ func init() {
 		"CastSpell":            reflect.ValueOf(ns.CastSpell),
 		"CastSpellLvl":         reflect.ValueOf(ns.CastSpellLvl),
 		"ClearMessages":        reflect.ValueOf(ns.ClearMessages),
+		"CreateGold":           reflect.ValueOf(ns.CreateGold),
+		"CreateGoldChest":      reflect.ValueOf(ns.CreateGoldChest),
+		"CreateGoldPile":       reflect.ValueOf(ns.CreateGoldPile),
 		"CreateObject":         reflect.ValueOf(ns.CreateObject),
 		"DeathScreen":          reflect.ValueOf(ns.DeathScreen),
 		"DestroyEveryChat":     reflect.ValueOf(ns.DestroyEveryChat),
@@ -897,6 +900,7 @@ type _github_com_opennox_noxscript_ns_v4_Obj struct {
 	WSetColor               func(ind int, cl color.Color)
 	WSetDisplayName         func(name string, cl color.Color)
 	WSetFlags               func(v object.Flags)
+	WSetGold                func(amount int)
 	WSetHealth              func(v int)
 	WSetHealthRegenPerFrame func(v float32)
 	WSetHealthRegenToMaxDur func(t time.Duration)
@@ -1219,6 +1223,9 @@ func (W _github_com_opennox_noxscript_ns_v4_Obj) SetDisplayName(name string, cl 
 }
 func (W _github_com_opennox_noxscript_ns_v4_Obj) SetFlags(v object.Flags) {
 	W.WSetFlags(v)
+}
+func (W _github_com_opennox_noxscript_ns_v4_Obj) SetGold(amount int) {
+	W.WSetGold(amount)
 }
 func (W _github_com_opennox_noxscript_ns_v4_Obj) SetHealth(v int) {
 	W.WSetHealth(v)

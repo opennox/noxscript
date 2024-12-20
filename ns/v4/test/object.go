@@ -390,6 +390,10 @@ func (obj *Object) GetGold() int {
 	panic("implement me")
 }
 
+func (obj *Object) SetGold(amount int) {
+	//TODO implement me
+}
+
 func (obj *Object) ChangeGold(delta int) {
 	//TODO implement me
 }

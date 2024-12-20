@@ -355,10 +355,13 @@ type Obj interface {
 	// 		obj.SetColor(0, ns.RGB(80, 0, 0)) // dark red
 	SetColor(ind int, cl Color)
 
-	// GetGold gets amount of gold for player object.
+	// GetGold gets amount of gold for object.
 	GetGold() int
 
-	// ChangeGold changes amount of gold for player object.
+	// SetGold sets amount of gold for object.
+	SetGold(amount int)
+
+	// ChangeGold changes amount of gold for object.
 	ChangeGold(delta int)
 
 	// GiveXp grants experience to a player.
